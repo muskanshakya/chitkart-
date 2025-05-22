@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ChitKart | Campus Marketplace</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f5f6fa;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #48c6ef, #d80032);
+      padding: 30px 20px;
+      text-align: center;
+      color: white;
+    }
+
+    .main-title {
+      font-size: 2.5rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .center-text {
+      text-align: center;
+      margin: 30px 20px;
+    }
+
+    .intro h2 {
+      font-size: 2rem;
+      color: #2c3e50;
+    }
+
+    .intro p {
+      font-size: 1.1rem;
+      margin-top: 10px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .feature-box {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .feature-box:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature-box h3 {
+      color: #245d7c;
+      margin-bottom: 10px;
+    }
+
+    .feature-box a.cta-button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 30px;
+      background-color: #fef3e2;
+      color: #f8d893;
+      font-size: 16px;
+      font-weight: 600;
+      border: none;
+      border-radius: 50px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .feature-box a.cta-button:hover {
+      background-color: #ffdbef;
+    }
+
+    .story-section,
+    .contact-section,
+    .feedback-section {
+      background-color: white;
+      padding: 40px 30px;
+      margin: 40px auto;
+      max-width: 800px;
+      border-radius: 12px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .story-section h2,
+    .contact-section h2,
+    .feedback-section h2 {
+      color: #c0392b;
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+    }
+
+    .feedback-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .feedback-form input,
+    .feedback-form textarea {
+      width: 80%;
+      padding: 12px;
+      margin: 12px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    .feedback-form button {
+      padding: 10px 22px;
+      background-color: #245d7c;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+      margin-top: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    .feedback-form button:hover {
+      background-color: #1e4a60;
+    }
+
+    footer {
+      background: #2c3e50;
+      color: #fff;
+      text-align: center;
+      padding: 15px 10px;
+      margin-top: 50px;
+    }
+
+    a {
+      color: #2980b9;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="main-title">ChitKart</h1>
+    <p>Campus Marketplace & Student Deals Platform</p>
+  </header>
+
+  <main>
+    <section class="intro center-text">
+      <h2>Welcome to ChitKart</h2>
+      <p>Connecting students to buy, sell, and find items across campus with ease and trust.</p>
+    </section>
+
+    <section class="features">
+      <div class="feature-box">
+        <h3>Upload Item</h3>
+        <p>Sell your used books, gadgets, and essentials.</p>
+        <a href="database code.html" class="cta-button">Upload</a>
+      </div>
+      <div class="feature-box">
+        <h3>Buy Item</h3>
+        <p>Discover affordable, pre-loved items from fellow students.</p>
+        <a href="index.php" class="cta-button">Browse</a>
+      </div>
+      <div class="feature-box">
+        <h3>Lost & Found</h3>
+        <p>Help the community by reporting or claiming lost items.</p>
+        <a href="lostandfound.html" class="cta-button">Report</a>
+      </div>
+      <div class="feature-box">
+        <h3>Cart</h3>
+        <p>Manage the items you plan to buy.</p>
+        <a href="viewcart1.php" class="cta-button">View Cart</a>
+      </div>
+    </section>
+
+    <section class="story-section">
+      <h2>Our Story</h2>
+      <p>
+        ChitKart began with a simple goal — make campus life easier and more connected. We're here to empower students by promoting reuse, sustainability, and student entrepreneurship, all in one digital hub.
+      </p>
+    </section>
+
+    <section class="contact-section">
+      <h2>Contact Us</h2>
+      <p>Email: <a href="mailto:abc@gmail.com">abc@gmail.com</a></p>
+      <p>Phone: <a href="tel:+91997655431">+91 997655431</a></p>
+    </section>
+
+    <section class="feedback-section">
+      <h2>Send Us Your Feedback</h2>
+      <form action="#" method="post" class="feedback-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Feedback" rows="5" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ChitKart. All rights reserved.</p>
+  </footer>
+</body>
+</html>

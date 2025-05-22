@@ -1,0 +1,206 @@
+<!-- Save this as signup.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Signup Form</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    html, body {
+      height: 100%;
+      width: 100%;
+      display: grid;
+      place-items: center;
+      background-image: url("https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTAzL2pvYjE1NzMtYmFja2dyb3VuZC0yMy14LmpwZw.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+    .wrapper {
+      width: 400px;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 15px;
+      box-shadow: 0 20px 35px rgba(0,0,0,0.2);
+      overflow: hidden;
+    }
+    .wrapper .title {
+      font-size: 30px;
+      font-weight: 600;
+      text-align: center;
+      line-height: 100px;
+      color: #fff;
+      background: linear-gradient(-135deg, #48c6ef, #D80032);
+    }
+    .wrapper form {
+      padding: 30px;
+    }
+    .field {
+      position: relative;
+      margin-top: 20px;
+    }
+    .field input {
+      width: 100%;
+      height: 50px;
+      padding: 0 40px;
+      font-size: 16px;
+      border-radius: 25px;
+      border: 1px solid #ccc;
+      outline: none;
+      transition: 0.3s;
+    }
+    .field input:focus {
+      border-color: #D80032;
+    }
+    .field label {
+      position: absolute;
+      top: 50%;
+      left: 40px;
+      transform: translateY(-50%);
+      font-size: 16px;
+      color: #999;
+      pointer-events: none;
+      transition: 0.3s ease;
+    }
+    .field input:focus ~ label,
+    .field input:valid ~ label {
+      top: -8px;
+      left: 35px;
+      font-size: 13px;
+      background: #fff;
+      padding: 0 5px;
+      color: #D80032;
+    }
+    .field .icon {
+      position: absolute;
+      top: 50%;
+      left: 15px;
+      transform: translateY(-50%);
+      color: #999;
+      font-size: 16px;
+    }
+    input[type="submit"] {
+      background: linear-gradient(-135deg, #8B0000, #D80032);
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 18px;
+      margin-top: 25px;
+      height: 50px;
+      width: 100%;
+      border-radius: 25px;
+      transition: 0.3s ease;
+    }
+    input[type="submit"]:hover {
+      transform: scale(1.03);
+      background: linear-gradient(-135deg, #a00000, #e20038);
+    }
+    .login-link {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+      color: #555;
+    }
+    .login-link a {
+      color: #D80032;
+      text-decoration: none;
+    }
+    .login-link a:hover {
+      text-decoration: underline;
+    }
+
+    .cta-button {
+      margin-top: 20px;
+      margin-right: 50px;
+      padding: 12px 140px;
+      background-color: #cbebf0;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      z-index: 2;
+    }
+
+    .cta-button:hover {
+      background-color: #ffdbef;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="title">SIGNUP</div>
+    <form method="POST" action="signup.php">
+      <div class="field">
+        <i class="fas fa-user icon"></i>
+        <input type="text" name="name" required>
+        <label>Full Name</label>
+      </div>
+      <div class="field">
+        <i class="fas fa-envelope icon"></i>
+        <input type="email" name="email" required>
+        <label>Email Address</label>
+      </div>
+      <div class="field">
+        <i class="fas fa-lock icon"></i>
+        <input type="password" name="password" required>
+        <label>Password</label>
+      </div>
+      <div class="field">
+        <i class="fas fa-lock icon"></i>
+        <input type="password" name="confirm_password" required>
+        <label>Confirm Password</label>
+      </div>
+           <button class="cta-button" "><a href="C:\Users\KHUSHI\Downloads\mainpage.html">Get Started</a></button>
+
+          <div class="login-link">
+        Already have an account? <a href="C:\Users\KHUSHI\Downloads\finalloginpage.html">Login now</a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

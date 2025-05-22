@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome to CHITKART</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #4b0082;
+      --accent: #ff4081;
+      --background: #fefcff;
+      --nav-bg: #ffffff;
+      --text-dark: #1a202c;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--background);
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      width: 98%;
+      background-color: var(--nav-bg);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    nav .logo {
+      font-size: 30px;
+      font-weight: 800;
+      color: var(--primary);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: var(--text-dark);
+      font-size: 28px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    nav ul li a::after {
+      content: '';
+      width: 0;
+      height: 2px;
+      background: var(--accent);
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      transition: width 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: var(--primary);
+    }
+
+    nav ul li a:hover::after {
+      width: 100%;
+    }
+
+    .hero-section {
+      position: relative;
+      height: 100vh;
+      background: linear-gradient(to right, #fefcff, #ffe8f0);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding-top: 100px;
+      overflow: hidden;
+    }
+
+    .blob {
+      position: absolute;
+      top: -150px;
+      left: -100px;
+      width: 600px;
+      z-index: 0;
+      opacity: 0.3;
+      animation: float 10s infinite ease-in-out alternate;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0) rotate(0deg);
+      }
+      100% {
+        transform: translateY(30px) rotate(10deg);
+      }
+    }
+
+    .hello-text {
+      font-size: 64px;
+      font-weight: 800;
+      color: var(--primary);
+      animation: fadeInHello 1.5s ease-out forwards;
+      opacity: 0;
+      z-index: 2;
+    }
+
+    .welcome-text {
+      font-size: 36px;
+      font-weight: 600;
+      color: var(--accent);
+      margin-top: 10px;
+      animation: fadeInWelcome 2s ease-out 0.5s forwards;
+      opacity: 0;
+      z-index: 2;
+    }
+
+    .cta-button {
+      margin-top: 30px;
+      padding: 14px 32px;
+      background-color: #cbebf0;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      z-index: 2;
+    }
+
+    .cta-button:hover {
+      background-color: #ffdbef;
+    }
+
+    @keyframes fadeInHello {
+      0% {
+        transform: translateY(-30px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInWelcome {
+      0% {
+        transform: translateY(30px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hello-text {
+        font-size: 48px;
+      }
+
+      .welcome-text {
+        font-size: 28px;
+      }
+
+      .cta-button {
+        font-size: 14px;
+        padding: 12px 24px;
+      }
+
+      nav ul {
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">CHITKART</div>
+    <ul>
+      <li><a href="C:\Users\KHUSHI\Downloads\finalloginpage.html">Home</a></li>
+      <li><a href="C:\Users\KHUSHI\Downloads\finalloginpage.html">Login</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero-section">
+    
+    <svg class="blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <path fill="#ff4081"  transform="translate(100 100)" />
+    </svg>
+
+    <div class="hello-text">Hello!</div>
+    <div class="welcome-text">Welcome to CHITKART</div>
+    <button class="cta-button" "><a href="C:\Users\KHUSHI\Downloads\finalloginpage.html">Get Started</a></button>
+  </section>
+
+</body>
+</html>
